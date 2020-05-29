@@ -1,9 +1,9 @@
-#Azure Compute Module
+# Azure Compute Module
 
-##Who Maintains and Approves this Module? 
+## Who Maintains and Approves this Module? 
 
-##Usage
+## Usage
 
-##Inputs
+## Inputs
 
-##Outputs
+## Outputs
