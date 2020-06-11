@@ -18,7 +18,7 @@ resource "aviatrix_transit_gateway" "transit_gateway_tvpc" {
   vpc_reg                       = var.region
   vpc_id                        = aviatrix_vpc.aws_transit.vpc_id
   account_name                  = aviatrix_vpc.aws_transit.account_name
-  gw_name                       = (var.region == "us-east-2") ? "tvpc-gw${var.cloud_type}-east2 : "tvpc-gw${var.cloud_type}"
+  gw_name                       = (var.region == "us-east-2") ? "tvpc-gw${var.cloud_type}-east2" : "tvpc-gw${var.cloud_type}"
   ha_gw_size                    = var.avtx_gw_size
   gw_size                       = var.avtx_gw_size
   subnet                        = (var.cloud_type == 1) ? aviatrix_vpc.aws_transit.subnets[5].cidr : aviatrix_vpc.aws_transit.subnets[2].cidr
